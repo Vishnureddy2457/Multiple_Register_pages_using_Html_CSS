@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #944f4f;
+            margin: 0;
+            padding: 20px;
+        }
+        .registration-form {
+            background-color: #6de2d9;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 300px;
+            margin: auto;
+        }
+        .registration-form h2 {
+            text-align: center;
+            color: #10130d;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h2>Registration</h2>
+        <form action="/submit-registration" method="post">
+            <div class="input-group">
+                <input type="checkbox" id="personal" name="type" value="personal">
+                <label for="personal">Personal</label><br>
+                <input type="checkbox" id="company" name="type" value="company">
+                <label for="company">Company</label><br>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required><br>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <p>By clicking Register, you agree to our Privacy Policy.</p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
